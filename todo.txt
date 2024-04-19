@@ -1,0 +1,7 @@
+git init 
+git commit
+git PROFIT
+git status|
+git add
+git log 
+git remote add {server...}
