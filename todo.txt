@@ -6,4 +6,3 @@ git add
 git log 
 git remote add {server...}
 new
-.
