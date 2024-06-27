@@ -1,12 +1,14 @@
 
-        body {
+  body {
     font-family: Arial, sans-serif;
-    background-color: #8b86f1;
+    background-color: #544cf7f5;
     color: #333;
   }
 
-  h1{
-    color: aquamarine;
+  h1{ 
+    padding: 20px;
+    margin: 20px;
+    color: rgb(0, 12, 250);
   }
   .container{
     padding: 20px;
