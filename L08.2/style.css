@@ -21,3 +21,9 @@
     background-color: bisque;
     border: 1px solid #333;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;}
