@@ -1,0 +1,21 @@
+
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #8b86f1;
+    color: #333;
+  }
+
+  h1{
+    color: aquamarine;
+  }
+  .container{
+    padding: 20px;
+    margin: 20px;
+    background-color: blanchedalmond;
+  }
+
+  .box{
+    padding: 10px;
+    background-color: bisque;
+    border: 1px solid #333;
+}
