@@ -4,7 +4,6 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     background-image: url('/Users/dmitriyv/my-proj/my-proj/5710170'); /* Замените на ваш путь к изображению */
     background-size: cover; /* Изображение покрывает всю область */
     background-position: center; /* Центрирование изображения */
@@ -13,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -25,6 +24,9 @@ header h1 {
 
 main {
     margin: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 section {
@@ -36,7 +38,7 @@ h2 {
 }
 
 ul, ol {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -46,19 +48,8 @@ ul li, ol li {
     margin-bottom: 10px;
 }
 
-.image {
-    text-align: center;
-}
-
-.image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 footer {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
     color: #fff;
     text-align: center;
     padding: 10px 0;
