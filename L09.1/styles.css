@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 
-/* Стили для контейнера формы */
+/* Стили для контейнера  */
 .registration-container {
     background-color: #fff;
     padding: 20px;
@@ -18,7 +18,7 @@ body {
     width: 300px;
 }
 
-/* Заголовок формы */
+/* Заголовок  */
 .registration-container h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -33,7 +33,7 @@ body {
 
 /* Стили для меток полей ввода */
 .registration-form label {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     color: #555;
 }
 
