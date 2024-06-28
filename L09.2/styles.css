@@ -42,7 +42,9 @@ body {
     color: #ff0;
 }
 
-/* Стили для контейнера формы */
+
+
+/* Стили для контейнера  */
 .registration-container {
     background-color: #fff;
     padding: 20px;
@@ -51,11 +53,9 @@ body {
     width: 300px;
 }
 
-/* Заголовок формы */
+/* Заголовок  */
 .registration-container h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
-}
-
+    color: #333;}
 /*​⬤
