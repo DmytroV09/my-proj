@@ -1,0 +1,189 @@
+/* Основные стили для тела документа */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+/* Стили для меню навигации */
+.navigation-menu {
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.navigation-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation-menu a:hover {
+    background-color: #555;
+}
+
+.navigation-menu .active {
+    background-color: #555;
+    color: #ff0;
+}
+
+/* Стили для контейнера формы */
+.registration-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Заголовок формы */
+.registration-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Стили для формы */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для меток полей ввода */
+.registration-form label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Основные стили для полей ввода */
+.registration-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Стили для полей ввода при наведении курсора */
+.registration-form input:hover {
+    border-color: #888;
+}
+
+/* Стили для полей ввода при фокусе */
+.registration-form input:focus {
+    border-color: #333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+/* Стили для кнопки */
+.registration-form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Стили для кнопки при наведении курсора */
+.registration-form button:hover {
+    background-color: #555;
+}
+
+/* Стили для контейнера таблицы */
+.table-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+/* Заголовок таблицы */
+.table-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Основные стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Стили для заголовков таблицы */
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Стили для парных строк */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Стили для непарных строк */
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Стили для контейнера текста */
+.text-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+/* Заголовок текста */
+.text-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Основные стили для текста */
+.text-container p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.text-container .highlight {
+    background-color: #f07c95;
+    font-weight: bold;
+}
+
+.text-container .large-text {
+    font
