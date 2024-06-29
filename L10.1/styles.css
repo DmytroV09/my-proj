@@ -181,7 +181,7 @@ tbody tr:nth-child(odd) {
 }
 
 .text-container .highlight {
-    background-color: #f1486c;
+    background-color: #b7929a;
     font-weight: bold;
 }
 
@@ -203,4 +203,6 @@ tbody tr:nth-child(odd) {
     font-size: 16px;
     margin-bottom: 11px;
     color: #333;
+    line-height: 1.5;
+    transition: color 0.3s, background-color 0.3s;
 }
