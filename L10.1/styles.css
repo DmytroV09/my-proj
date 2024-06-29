@@ -199,3 +199,8 @@ tbody tr:nth-child(odd) {
     color: #333;
     background-color: #f0f0f0;
 }
+.text-container h3 {
+    text-align: center;
+    margin-bottom: 11px;
+    color: #333;
+}
