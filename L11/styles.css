@@ -199,3 +199,8 @@ tbody tr:nth-child(odd) {
     color: #333;
     background-color: #f0f0f0;
 }
+.text-container1 {
+    font-size: 18px;
+    color: #333;
+
+}
