@@ -181,7 +181,7 @@ tbody tr:nth-child(odd) {
 }
 
 .text-container .highlight {
-    background-color: #b7929a;
+    background-color: #f07c95;
     font-weight: bold;
 }
 
@@ -198,11 +198,4 @@ tbody tr:nth-child(odd) {
 .text-container p:hover {
     color: #333;
     background-color: #f0f0f0;
-}
-.text-container h3 {
-    font-size: 16px;
-    margin-bottom: 11px;
-    color: #333;
-    line-height: 1.5;
-    transition: color 0.3s, background-color 0.3s;
 }
