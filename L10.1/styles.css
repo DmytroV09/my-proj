@@ -199,16 +199,3 @@ tbody tr:nth-child(odd) {
     color: #333;
     background-color: #f0f0f0;
 }
-.text-container1 h2 {
-    font-size: 11px;
-    color: #151cd9;
-    margin-bottom: 15px;
-    
-    line-height: 1.5;
-    transition: color 0.3s, background-color 0.3s;
-
-}
-.text-container1 .highlight {
-    background-color: #f1486c;
-    font-weight: bold;
-}
