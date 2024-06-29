@@ -186,4 +186,16 @@ tbody tr:nth-child(odd) {
 }
 
 .text-container .large-text {
-    font
+    font-size: 20px;
+}
+
+.text-container .small-text {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Псевдокласс для текста при наведении */
+.text-container p:hover {
+    color: #333;
+    background-color: #f0f0f0;
+}
