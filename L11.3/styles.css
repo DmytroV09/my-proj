@@ -1,0 +1,69 @@
+/* Импортируем собственный шрифт */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/CustomFont.woff2') format('woff2'),
+         url('fonts/CustomFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Основные стили для тела документа */
+body {
+    font-family: 'CustomFont', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Стили для заголовка */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-transform: uppercase; /* Пример использования text-transform */
+    font-size: 2.5em; /* Изменение размера шрифта */
+}
+
+/* Основные стили для секций */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #333;
+    text-transform: capitalize; /* Пример использования text-transform */
+    font-size: 2em; /* Изменение размера шрифта */
+}
+
+section p {
+    font-size: 1.2em; /* Изменение размера шрифта */
+    line-height: 1.5;
+    text-transform: lowercase; /* Пример использования text-transform */
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    text-transform: uppercase; /* Пример использования text-transform */
+    font-size: 1.2em; /* Изменение размера шрифта */
+}
