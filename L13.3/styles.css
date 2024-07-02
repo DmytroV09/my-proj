@@ -88,3 +88,36 @@ footer p {
     margin: 0;
     text-align: left;
 }
+/* Анімація для градієнтного фону та тіні */
+@keyframes gradient-animation {
+    0% {
+        background: linear-gradient(to right, rgb(72, 61, 139), rgb(123, 104, 238));
+    }
+    50% {
+        background: linear-gradient(to right, rgb(123, 104, 238), rgb(72, 61, 139));
+    }
+    100% {
+        background: linear-gradient(to right, rgb(72, 61, 139), rgb(123, 104, 238));
+    }
+}
+
+@keyframes shadow-animation {
+    0% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.animated-gradient {
+    background: linear-gradient(to right, rgb(72, 61, 139), rgb(123, 104, 238));
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    animation: gradient-animation 5s infinite, shadow-animation 5s infinite;
+}
