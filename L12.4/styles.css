@@ -1,0 +1,145 @@
+/* Основні стилі для тіла документа */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #918d8d;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Стилі для заголовка */
+header {
+    background-color: #6e6e6e;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+/* Основні стилі для секцій */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #a7a7a7;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 2em;
+}
+
+/* Стилі для таблиці */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+   
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Стилі для футера */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+/* Секція із зображенням */
+.image-section {
+    background: linear-gradient(to right, #ffeb3b, #fbc02d);
+    background-color: rgba(200, 200, 0, 0.5);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #fbc02d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.image-section h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 2em;
+}
+
+/* Секція із відео */
+.video-section {
+    background-color: rgba(0, 200, 100, 0.5);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #7cb342;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.video-section h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 2em;
+}
+
+/* Секція із таблицею */
+.table-section {
+    background-color: rgba(0, 0, 200, 0.5);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #0288d1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    
+}
+
+.table-section h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 2em;
+}
+
+/* Стилі для тексту в секціях */
+.image-section h2, .video-section h2, .table-section h2 {
+    color: #0fbde4;
+}
+
+.image-section h2 {
+    color: #d6c90e;
+}
+
+.video-section h2 {
+    color: #0dd879;
+}
+
+.table-section h2 {
+    color: #6616d6;
+}
