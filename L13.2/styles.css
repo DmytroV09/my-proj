@@ -1,0 +1,91 @@
+/* Основні стилі для тіла документа */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(255, 140, 0), rgb(255, 215, 0)); /* Градієнтний фон */
+    color: #333;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стилі для заголовка */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Основні стилі для секцій */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Стилі для футера */
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Стилі для зображення */
+.team-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тінь для зображення */
+    margin-top: 20px;
+}
+
+/* Стилі для блоку з текстом */
+.text-block {
+    background: linear-gradient(to right, rgb(72, 61, 139), rgb(123, 104, 238)); /* Градієнтний фон для текстового блоку */
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тінь для текстового блоку */
+}
+
+.text-block h2, .text-block p {
+    margin: 0;
+    text-align: left;
+}
