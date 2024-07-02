@@ -78,7 +78,7 @@ footer p {
 }
 /* Секція із зображенням */
 .image-section {
-    background: linear-gradient(to right, rgb(255, 235, 59), rgb(251, 192, 45));
+    background: linear-gradient(to right, rgb(255, 235, 59), rgb(164, 223, 15));
     background-color: rgba(200, 200, 0, 0.5);
     margin: 20px 0;
     padding: 20px;
