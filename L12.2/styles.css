@@ -1,0 +1,120 @@
+/* Основні стилі для тіла документа */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Стилі для заголовка */
+header {
+    background-color: #6e6e6e;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+/* Основні стилі для секцій */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 2em;
+}
+
+/* Стилі для таблиці */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Стилі для футера */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+/* Секція із зображенням */
+.image-section {
+    background-color: #ffeb3b;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-section h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 2em;
+}
+
+/* Секція із відео */
+.video-section {
+    background-color: #8bc34a;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-section h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 2em;
+}
+
+/* Секція із таблицею */
+.table-section {
+    background-color: rgba(0, 0, 0, .5)
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-section h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 2em;
+}
