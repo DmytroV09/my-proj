@@ -125,17 +125,17 @@ footer p {
 
 /* Стилі для тексту в секціях */
 .image-section h2, .video-section h2, .table-section h2 {
-    color: #333;
+    color: #0fbde4;
 }
 
 .image-section h2 {
-    color: #d60e0e;
+    color: #d6c90e;
 }
 
 .video-section h2 {
-    color: #d80d0d;
+    color: #0dd879;
 }
 
 .table-section h2 {
-    color: #16b0d6;
+    color: #6616d6;
 }
