@@ -119,5 +119,5 @@ footer p {
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    animation: gradient-animation 3s infinite, shadow-animation 3s infinite;
+    animation: gradient-animation 2s infinite, shadow-animation 2s infinite;
 }
