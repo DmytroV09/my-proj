@@ -27,7 +27,7 @@ main {
 }
 
 section {
-    background-color: #fff;
+    background-color: #a7a7a7;
     margin: 20px 0;
     padding: 20px;
     border-radius: 10px;
@@ -45,6 +45,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    
 }
 
 th, td {
@@ -120,4 +121,21 @@ footer p {
     margin-top: 0;
     color: #333;
     font-size: 2em;
+}
+
+/* Стилі для тексту в секціях */
+.image-section h2, .video-section h2, .table-section h2 {
+    color: #333;
+}
+
+.image-section h2 {
+    color: #000;
+}
+
+.video-section h2 {
+    color: #000;
+}
+
+.table-section h2 {
+    color: #fff;
 }
