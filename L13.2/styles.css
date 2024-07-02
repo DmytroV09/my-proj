@@ -76,7 +76,7 @@ footer p {
 }
 /* Стилі для блоку з текстом */
 .text-block {
-    background: linear-gradient(to right, rgb(34, 0, 255), rgb(40, 232, 196)); /* Градієнтний фон для текстового блоку */
+    background: linear-gradient(to right, rgb(34, 0, 255), rgb(80, 169, 237)); /* Градієнтний фон для текстового блоку */
     color: #cccccc;
     padding: 20px;
     margin: 20px;
