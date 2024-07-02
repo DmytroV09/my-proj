@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, rgb(255, 140, 0), rgb(255, 215, 0)); /* Градієнтний фон */
+    background: linear-gradient(to right,rgb(0, 55, 255), rgb(0, 179, 255)); /* Градієнтний фон */
     color: #333;
     text-align: center;
     height: 100vh;
@@ -74,7 +74,6 @@ footer p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тінь для зображення */
     margin-top: 20px;
 }
-
 /* Стилі для блоку з текстом */
 .text-block {
     background: linear-gradient(to right, rgb(72, 61, 139), rgb(123, 104, 238)); /* Градієнтний фон для текстового блоку */
