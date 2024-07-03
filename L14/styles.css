@@ -8,7 +8,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url('background.jpg'); /* Замініть 'background.jpg' на шлях до вашого зображення */
+    background-image: url('/Users/dmitriyv/my-proj/L13.1/img/pexels-markusspiske-113850.jpg'); /* Замініть 'background.jpg' на шлях до вашого зображення */
     background-size: cover; /* Змінює розмір зображення на весь екран */
     background-position: center; /* Центрує зображення */
     background-repeat: no-repeat; /* Запобігає повторенню зображення */
