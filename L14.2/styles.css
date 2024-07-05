@@ -1,0 +1,126 @@
+/* Основні стилі для тіла документа */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/Users/dmitriyv/my-proj/L13.1/img/pexels-markusspiske-113850.jpg'); /* Замініть 'background.jpg' на шлях до вашого зображення */
+    background-size: cover; /* Змінює розмір зображення на весь екран */
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+/* Стилі для заголовка */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Основні стилі для секцій */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Стилі для контейнера з соціальними іконками */
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Загальні стилі для іконок */
+.icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-image: url('social-sprite.png'); /* Замініть на шлях до вашого спрайту */
+    background-size: cover;
+}
+
+/* Встановлюємо позиції іконок у спрайті */
+.facebook {
+    background-position: 0 0;
+}
+
+.twitter {
+    background-position: -50px 0;
+}
+
+.instagram {
+    background-position: -100px 0;
+}
+
+.linkedin {
+    background-position: -150px 0;
+}
+
+/* Стилі для контейнера з кнопкою */
+.button-container {
+    text-align: center;
+    
+}
+
+/* Стилі для кнопки */
+.styled-button {
+    background-color: #008CBA; /* Фоновий колір */
+    color: #ffffff; /* Колір тексту */
+    padding: 15px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Стилі для кнопки при наведені */
+.styled-button:hover {
+    background-color: #005f6b; /* Зміна фонової кольору при наведені */
+    transform: scale(1.05); /* Збільшення кнопки при наведені */
+}
+
+
+/* Стилі для футера */
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
