@@ -70,6 +70,7 @@ footer p {
 /* Стилі для контейнера з кнопкою */
 .button-container {
     text-align: center;
+    position:relative;
 }
 
 /* Стилі для кнопки */
