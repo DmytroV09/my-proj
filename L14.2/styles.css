@@ -68,7 +68,7 @@ section p {
     display: inline-block;
     background-image: url('/Users/dmitriyv/my-proj/L14.2/img/twitter_EQKf00KWAAA6txx.jpg'); /* Замініть на шлях до вашого спрайту */
     background-size: cover;
-    background-repeat: no-repeat;
+    
 }
 
 /* Встановлюємо позиції іконок у спрайті */
