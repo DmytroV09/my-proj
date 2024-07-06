@@ -67,7 +67,7 @@ section p {
     height: 50px;
     display: inline-block;
     background-image: url('/Users/dmitriyv/my-proj/L14.2/img/twitter_EQKf00KWAAA6txx.jpg'); /* Замініть на шлях до вашого спрайту */
-    background-size: 50px;
+    background-size: cover;
     background-position: center;
     
 }
