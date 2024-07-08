@@ -1,0 +1,94 @@
+/* Основні стилі для тіла документа */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to bottom, #33ccff, #ff99cc); /* Градієнтний фон */
+    background-attachment: fixed; /* Фон залишається на місці під час прокручування */
+    color: #ffffff; /* Колір тексту для читабельності */
+}
+
+/* Стилі для контейнера з вмістом */
+.content {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    position: relative; /* Для розміщення псевдоелементів */
+}
+
+/* Декоративний елемент перед контейнером */
+.content::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    background-image: url('decor1.png'); /* Замініть на шлях до вашого зображення */
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Декоративний елемент після контейнера */
+.content::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
+    background-image: url('decor2.png'); /* Замініть на шлях до вашого зображення */
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Стилі для заголовка */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Стилі для параграфа */
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Стилі для контейнера з соціальними іконками */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* Загальні стилі для іконок */
+.icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-image: url('/Users/dmitriyv/my-proj/L14.2/img/twitter_EQKf00KWAAA6txx.jpg'); /* Замініть на шлях до вашого спрайту */
+    background-size: cover;
+}
+
+/* Встановлюємо позиції іконок у спрайті */
+.facebook {
+    background-position: 8px 0;
+}
+
+.twitter {
+    background-position: 41px 0;
+    
+}
+
+.instagram {
+    background-position: -164px 0;
+}
+
+.linkedin {
+    background-position: -200px 0;
+}
