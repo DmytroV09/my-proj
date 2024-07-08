@@ -66,7 +66,7 @@ section p {
     width: 50px;
     height: 50px;
     display: flex;
-    background-image: url('/Users/dmitriyv/my-proj/L14.2/img/twitter_EQKf00KWAAA6txx.jpg'); /* Замініть на шлях до вашого спрайту */
+    background-image: url('https://www.d-id.com/photo-to-video/?utm_term=brand-ad&utm_term=d-id&utm_campaign=Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=6149207258&hsa_cam=17780208183&hsa_grp=141566902480&hsa_ad=611130303518&hsa_src=g&hsa_tgt=kwd-369030435047&hsa_kw=d-id&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAiAuOieBhAIEiwAgjCvcp0aztpK6jYiqSJK8rgZnL-nTrj_hIqDi4_r3wLDDb_yPrXkieRdpRoC7YYQAvD_BwE'); /* Замініть на шлях до вашого спрайту */
     background-size: cover;
     background-position: center;
     
