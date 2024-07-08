@@ -22,7 +22,7 @@ header {
     padding: 20px 0;
     width: 100%;
 
-    background-image: linear-gradient(to bottom, #33ccff, #ff99cc); /* Градієнтний фон */
+    background-image: linear-gradient(to bottom, #33ccff, #f1ee36); /* Градієнтний фон */
     color: #ffffff; /* Колір тексту для читабельності */
 }
 
@@ -133,7 +133,7 @@ footer {
     padding: 10px 0;
     width: 100%;
 
-    background-image: linear-gradient(to bottom, #33ccff, #ff99cc); /* Градієнтний фон */
+    background-image: linear-gradient(to bottom, #33ccff, #f1ee36); /* Градієнтний фон */
     color: #ffffff; /* Колір тексту для читабельності */
 }
 
