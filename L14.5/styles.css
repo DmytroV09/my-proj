@@ -221,3 +221,35 @@ footer p {
     visibility: visible;
     opacity: 1;
     }
+
+    /* Адаптивні стилі для мобільних пристроїв */
+@media (max-width: 768px) {
+    body {
+        background-size: contain; /* Адаптивний розмір фону для маленьких екранів */
+    }
+
+    header h1 {
+        font-size: 2em; /* Зменшення розміру тексту заголовка */
+    }
+
+    section {
+        width: 90%;
+    }
+
+    section h2 {
+        font-size: 1.5em; /* Зменшення розміру тексту секцій */
+    }
+
+    section p {
+        font-size: 1em; /* Зменшення розміру тексту параграфів */
+    }
+
+    .icon {
+        width: 40px; /* Зменшення розміру іконок */
+        height: 40px;
+    }
+
+    .styled-button {
+        padding: 10px 20px; /* Зменшення розміру кнопки */
+        font-size: 14px; /* Зменшення розміру тексту на кнопці */
+    }
