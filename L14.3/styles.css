@@ -12,6 +12,8 @@ body {
     background-size: cover; /* Змінює розмір зображення на весь екран */
     background-position: center; 
     background-repeat: no-repeat; 
+
+    background-attachment: fixed; /* Фон залишається на місці під час прокручування */
 }
 
 /* Стилі для заголовка */
