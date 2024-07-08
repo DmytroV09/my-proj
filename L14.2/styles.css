@@ -70,8 +70,7 @@ section p {
     background-size: cover;
     background-position: center;
     
-    display: -webkit-box;
-    display: -ms-flexbox;
+   
    
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
