@@ -26,6 +26,7 @@ body {
 
 .rotate:hover {
     transform: rotate(45deg);
+    transform: skew(20deg, 30deg);
 }
 
 .scale:hover {
