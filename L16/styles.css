@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.transform-box {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.rotate:hover {
+    transform: rotate(45deg);
+}
+
+.scale:hover {
+    transform: scale(1.2);
+}
+
+.translate:hover {
+    transform: translate(50px, 50px);
+}
+
+/* Додаткові стилі для трансформації при кліку */
+.clicked {
+    transform: rotate(-45deg);
+}
+
+.clicked-scale {
+    transform: scale(0.8);
+}
+
+.clicked-translate {
+    transform: translate(-50px, -50px);
+}
