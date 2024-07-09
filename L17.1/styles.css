@@ -23,3 +23,21 @@ body {
         opacity: 0; /* Кінцева прозорість */
     }
 }
+
+.rotate {
+    font-size: 2em;
+    color: #fff;
+    background-color: #007bff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); /* Початкова позиція */
+    }
+    100% {
+        transform: rotate(360deg); /* Кінцева позиція */
+    }
+}
