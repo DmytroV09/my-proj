@@ -36,6 +36,21 @@ body {
     }
 }
 
+.resize {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #28a745;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    animation: resize 4s infinite;
+
+}
+
+
 @keyframes resize {
     0% {
         width: 100px;
