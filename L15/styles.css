@@ -1,0 +1,15 @@
+/* Стилі для прямокутника */
+.rectangle {
+    width: 300px; /* Ширина */
+    height: 200px; /* Висота */
+    background-color: #3498db; /* Колір фону */
+    border: 2px solid #2980b9; /* Рамка */
+    padding: 20px; /* Внутрішній відступ */
+    color: #ffffff; /* Колір тексту */
+    text-align: center; /* Вирівнювання тексту по центру */
+    margin: 50px auto; /* Зовнішній відступ (авто по горизонталі) */
+    font-size: 1.5em; /* Розмір шрифту */
+    font-family: Arial, sans-serif; /* Шрифт */
+    border-radius: 10px; /* Радіус закруглення кутів */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь */
+}
