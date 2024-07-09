@@ -13,11 +13,4 @@
     border-radius: 10px; /* Радіус закруглення кутів */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь */
 }
-.body {
-    background-image: url('/Users/dmitriyv/my-proj/L13.1/img/pexels-markusspiske-113850.jpg'); /* Замініть 'background.jpg' на шлях до вашого зображення */
-    background-size: cover; /* Змінює розмір зображення на весь екран */
-    background-position: center; 
-    background-repeat: no-repeat; 
 
-    background-attachment: fixed;
-}
