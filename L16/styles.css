@@ -36,15 +36,4 @@ body {
     transform: translate(50px, 50px);
 }
 
-/* Додаткові стилі для трансформації при кліку */
-.clicked {
-    transform: rotate(-45deg);
-}
 
-.clicked-scale {
-    transform: scale(0.8);
-}
-
-.clicked-translate {
-    transform: translate(-50px, -50px);
-}
