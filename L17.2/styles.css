@@ -35,3 +35,18 @@ body {
         left: 0;
     }
 }
+
+@keyframes resize {
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+    50% {
+        width: 200px;
+        height: 200px;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+    }
+}
