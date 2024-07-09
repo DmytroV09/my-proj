@@ -22,10 +22,11 @@
 }
 
 .clicked {
-    background-color: #e74c3c; /* Новий колір фону */
-    border: 2px solid #c0392b; /* Нова рамка */
+    background-color: #2980b9; /* Новий колір фону */
+    border: 2px solid #3498db; /* Нова рамка */
     width: 340px; /* Нова ширина */
     height: 240px; /* Нова висота */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Нова тінь */
     margin: 50px auto;
+    border-radius: 10px; /* Радіус закруглення кутів */
 }
