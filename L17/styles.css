@@ -1,135 +1,28 @@
 body {
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-  }
-  
-  .container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    background-image: linear-gradient(
-      to bottom right,
-      #4646fe,
-      rgb(119, 78, 160)
-    );
-    overflow-y: auto;
-  }
-  
-  .box {
-    width: 400px;
-    height: 400px;
-    border-radius: 10px;
-    background-image: linear-gradient(to top right, #0b039c, #ff228d);
-  }
-  
-  .subscribe-button {
-    width: 400px;
-    height: 80px;
-    background-image: linear-gradient(to bottom right, #ff350f, #cf7869);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 48px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    animation: wiggle 2s ease-in-out infinite;
-    transform-origin: bottom;
-  }
-  
-  @keyframes wiggle {
-    0%, 7% {
-      transform: rotateZ(0);
-    }
-    15% {
-      transform: rotateZ(-15deg);
-    }
-    20% {
-      transform: rotateZ(10deg);
-    }
-    25% {
-      transform: rotateZ(-10deg);
-    }
-    30% {
-      transform: rotateZ(6deg);
-    }
-    35% {
-      transform: rotateZ(-4deg);
-    }
-    40%, 100% {
-      transform: rotateZ(0);
-    }
-  }
-  
-  .loader {
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 2px 2px 50px #000000;
-  }
-  
-  .loader .inner {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: rgb(90, 13, 166);
-    box-shadow: inset 2px 2px 20px rgb(255, 6, 218);
-    animation: 2s pulse infinite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .loader .rover {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(90, 9, 171);
-    box-shadow: inset 2px 2px 10px rgb(255, 6, 218);
-    border-radius: 50%;
-    position: absolute;
-    transform: translateY(-150px);
-    animation: 1s roverSpin cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  @keyframes roverSpin {
+    background-color: #f0f0f0;
+}
+
+.animated-text {
+    font-size: 2em;
+    color: #3498db; /* Початковий колір */
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
     0% {
-      rotate: 0deg;
-    }
-    100% {
-      rotate: 360deg;
-    }
-  }
-  
-  @keyframes pulse {
-    0% {
-      scale: 1;
-    }
-    25% {
-      scale: 0.5;
+        color: #3498db; /* Початковий колір */
     }
     50% {
-      scale: 1;
-    }
-    75% {
-      scale: 0.5;
+        color: #ebe427; /* Кінцевий колір */
     }
     100% {
-      scale: 1;
+        color: #3498db; /* Повернення до початкового кольору */
     }
-  }
-  
-  .loader:hover {
-    .rover, .inner {
-      animation-duration: 10s;
-      animation-play-state: paused;
-    }
-  }
+}
