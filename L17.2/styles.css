@@ -1,0 +1,37 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.move {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007bff;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    animation: move-right 6s infinite;
+}
+
+@keyframes move-right {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 150px);
+    }
+    100% {
+        left: 0;
+    }
+}
