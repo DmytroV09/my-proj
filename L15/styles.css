@@ -20,3 +20,11 @@
     height: 220px; /* Зміна висоти */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Зміна тіні */
 }
+
+.clicked {
+    background-color: #e74c3c; /* Новий колір фону */
+    border: 2px solid #c0392b; /* Нова рамка */
+    width: 340px; /* Нова ширина */
+    height: 240px; /* Нова висота */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Нова тінь */
+}
