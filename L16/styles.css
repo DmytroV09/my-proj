@@ -29,7 +29,7 @@ body {
 }
 
 .scale:hover {
-    transform: scale(1.2);
+    transform: scale(2);
 }
 
 .translate:hover {
