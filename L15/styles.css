@@ -27,4 +27,5 @@
     width: 340px; /* Нова ширина */
     height: 240px; /* Нова висота */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Нова тінь */
+    margin: 50px auto;
 }
