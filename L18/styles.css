@@ -5,7 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #2976d4;
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
 .block {
     margin: 20px 0;
     padding: 20px;
-    background-color: #fff;
+    background-color: #bdbdbd;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
