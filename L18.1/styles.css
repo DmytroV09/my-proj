@@ -44,6 +44,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 200px;
+    backdrop-filter: blur(1px) opacity(.8) grayscale(50%);
 }
 
 .third-block img, .third-block p {
