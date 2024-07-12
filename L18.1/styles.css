@@ -32,7 +32,7 @@ body {
 }
 
 .first-block:hover {
-    filter: blur(0px) opacity(0) grayscale(0%);
+    filter: blur(0px) opacity(1) grayscale(0%);
 }
 
 .second-block {
