@@ -31,6 +31,10 @@ body {
     filter: blur(2px) opacity(0.8) grayscale(50%);
 }
 
+.first-block:hover {
+    filter: blur(0px) opacity(0) grayscale(0%);
+}
+
 .second-block {
     filter: blur(1px) opacity(0.9) grayscale(30%);
 }
