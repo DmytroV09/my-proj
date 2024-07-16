@@ -21,6 +21,8 @@ body {
     border: 2px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .block p {
@@ -28,6 +30,7 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #e0e0e0;
+    position: relative;
 }
 
 .small-block {
@@ -49,4 +52,13 @@ body {
 .block:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.background-block {
+    background: url('https://cdn.pixabay.com/photo/2017/11/16/09/32/matrix-2953869_1280.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.background-block p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
