@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    margin: 10px;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 .block p {
-    margin: 0;
+    margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #e0e0e0;
