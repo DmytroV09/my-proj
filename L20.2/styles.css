@@ -45,6 +45,44 @@ body {
     padding: 10px;
 }
 
+.block {
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+.absolute {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.fixed {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.static {
+    position: static;
+}
+
+.sticky {
+    position:sticky;
+    bottom: 10px;
+    
+}
+
 /* Float */
 .float {
     float: left;
