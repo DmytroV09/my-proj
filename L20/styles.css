@@ -75,3 +75,7 @@ body {
 .static {
     position: static;
 }
+
+.sticky {
+    position:sticky
+}
