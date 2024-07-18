@@ -83,7 +83,7 @@ body {
 }
 
 .fixed {
-     float: inline-end;
+     float:none;
 }
 
 .sticky {
