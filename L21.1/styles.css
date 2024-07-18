@@ -83,7 +83,10 @@ body {
 }
 
 .fixed {
-     float:inherit;
+     position: relative;
+     top: 20px;
+     right: 20px;
+     
 }
 
 .sticky {
