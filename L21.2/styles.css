@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.header, .footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    padding: 20px;
+    overflow: hidden; /* Clear floats */
+}
+
+.sidebar-left, .sidebar-right, .main-content {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.sidebar-left {
+    float: left;
+    width: 20%;
+    margin-right: 2%;
+}
+
+.sidebar-right {
+    float: right;
+    width: 20%;
+    margin-left: 2%;
+}
+
+.main-content {
+    float: left;
+    width: 54%;
+}
+
+.header, .footer {
+    clear: both; /* Ensure header and footer are not affected by floats */
+}
