@@ -43,3 +43,14 @@ body {
 .item:last-child {
     margin-right: 3;
 }
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Змінюємо орієнтацію на вертикальну */
+        align-items: stretch; /* Розтягуємо елементи на всю ширину */
+    }
+
+    .item {
+        margin: 10px 0; /* Вертикальні відступи між елементами */
+    }
+}
