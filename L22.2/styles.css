@@ -10,14 +10,15 @@ body {
 
 .container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between; /* Розташування елементів з рівномірними проміжками */
     align-items: center;
     background-color: #e0e0e0;
     padding: 20px;
     border-radius: 10px;
     width: 80%;
-    width: 700px;
-    height: 700px;
+    max-width: 1200px;
+
 }
 
 .item {
