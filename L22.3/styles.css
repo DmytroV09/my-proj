@@ -48,6 +48,24 @@ body {
     flex-basis: 200px; 
 }
 
+.column {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: flex;
+    flex: 1; /* Встановлюємо однакову ширину для колонок */
+    margin: 0 10px;
+}
+
+.column:first-child {
+    margin-left: 0;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
 
 @media (max-width: 600px) {
     .container, .second-container {
