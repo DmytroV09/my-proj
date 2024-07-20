@@ -54,7 +54,7 @@ body {
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    text-align: flex;
+    text-align: center;
     flex: 1; /* Встановлюємо однакову ширину для колонок */
     margin: 0 10px;
 }
