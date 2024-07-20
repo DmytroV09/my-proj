@@ -10,7 +10,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #e0e0e0;
     padding: 20px;
