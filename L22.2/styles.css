@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Розташування елементів з рівномірними проміжками */
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.item {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    flex: 1; /* Всі елементи матимуть однакову ширину */
+    margin: 0 10px;
+}
+
+.item-1 {
+    flex-grow: 1; /* Перший елемент заповнює залишок простору */
+}
+
+.item:first-child {
+    margin-left: 0;
+}
+
+.item:last-child {
+    margin-right: 0;
+}
