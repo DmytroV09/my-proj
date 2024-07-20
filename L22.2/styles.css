@@ -37,9 +37,9 @@ body {
 }
 
 .item:first-child {
-    margin-left: 0;
+    margin-left: 2;
 }
 
 .item:last-child {
-    margin-right: 0;
+    margin-right: 3;
 }
