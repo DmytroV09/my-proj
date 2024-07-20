@@ -67,6 +67,11 @@ body {
     margin-right: 0;
 }
 
+.highlight {
+    flex-shrink: 0; /* Запобігаємо зміщенню при скороченні контейнера */
+    background-color: #ffd700; /* Додаємо відмінний колір для виділення */
+}
+
 @media (max-width: 600px) {
     .container, .second-container {
         flex-direction: column; /* Змінюємо орієнтацію на вертикальну */
