@@ -44,7 +44,11 @@ body {
     margin-right: 3;
 }
 
-/* Медіа-запит для екранів менш ніж 600 пікселів */
+.item-2 {
+    flex-basis: 200px; 
+}
+
+
 @media (max-width: 600px) {
     .container, .second-container {
         flex-direction: column; /* Змінюємо орієнтацію на вертикальну */
