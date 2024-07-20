@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container, .second-container {
+    display: flex; /* Застосовуємо Flexbox */
+    justify-content: center; /* Вирівнювання по горизонталі по центру */
+    align-items: center; /* Вирівнювання по вертикалі по центру */
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 10px 0;
+}
+
+.item, .second-item {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    flex: 1; /* Всі елементи матимуть однакову ширину */
+    margin: 0 10px;
+}
+
+.item-1 {
+    flex-grow: 1; /* Перший елемент заповнює залишок простору */
+}
+
+.item:first-child {
+    margin-left: 0;
+}
+
+.item:last-child {
+    margin-right: 0;
+}
+
+/* Медіа-запит для екранів менш ніж 600 пікселів */
+@media (max-width: 600px) {
+    .container, .second-container {
+        flex-direction: column; /* Змінюємо орієнтацію на вертикальну */
+        align-items: stretch; /* Розтягуємо елементи на всю ширину */
+    }
+
+    .item, .second-item {
+        margin: 10px 0; /* Вертикальні відступи між елементами */
+    }
+}
