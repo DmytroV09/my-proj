@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-body {
+.body {
     font-family: Arial, sans-serif;
     display: grid;
     grid-template-areas:
@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
 }
 
-header {
+.header {
     grid-area: header;
     background-color: #4CAF50;
     color: white;
@@ -25,25 +25,25 @@ header {
     text-align: center;
 }
 
-nav {
+.nav {
     grid-area: nav;
     background-color: #333;
     color: white;
     padding: 15px;
 }
 
-nav ul {
+.nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
 }
 
-nav a {
+.nav a {
     color: white;
     text-decoration: none;
 }
 
-main {
+.main {
     grid-area: main;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -60,7 +60,7 @@ main {
     padding: 15px;
 }
 
-footer {
+.footer {
     grid-area: footer;
     background-color: #333;
     color: white;
