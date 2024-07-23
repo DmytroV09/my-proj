@@ -1,42 +1,49 @@
-
-
+body {
+    font-family: Ubuntu, sans-serif;
+    margin: 0;
+  }
   .container {
-    display: grid;
-    border: 10px solid blueviolet;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 50px;
+    background-image: linear-gradient(to bottom right, blue, red);
+    overflow-y: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .grid-container {
+    width: 1200px;
+    height: 800px;
+    border: 10px solid #ff228d;
     border-radius: 20px;
   
-    width: 1200px;
-    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   
-    grid-template-columns: 1fr 2fr .4fr 2fr;
-    grid-template-rows: auto;
     grid-template-areas:
-        "header header header header"
-        "main main . sidebar"
-        "footer footer footer footer";
-  
-    justify-content: center;
-    align-items: center;
+      "header header header"
+      "menu content content"
+      "footer footer footer";
+    grid-gap: 10px 20px;
   }
   
   .item {
-    height: 100px;
+    width: 200px;
+    height: 150px;
     background-image: linear-gradient(to top right, #0b039c, #ff228d);
   }
-  
   
   .item:nth-child(1) {
     grid-area: header;
   }
-  
   .item:nth-child(2) {
-    grid-area: main;
+    grid-area: menu;
   }
-  
   .item:nth-child(3) {
-    grid-area: sidebar;
+    grid-area: content;
   }
-  
   .item:nth-child(4) {
     grid-area: footer;
   }
