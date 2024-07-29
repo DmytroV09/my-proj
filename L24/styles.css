@@ -54,6 +54,11 @@ footer {
     bottom: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     nav ul li {
@@ -79,8 +84,7 @@ footer {
     }
 
     img {
-        width: auto;
+        max-width: 100%;
         height: auto;
-        max-width: 768px;
     }
 }
