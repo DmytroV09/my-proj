@@ -88,3 +88,25 @@ img {
         height: auto;
     }
 }
+/* Orientation Media Queries */
+@media (orientation: portrait) {
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex: 1;
+        order: 1;
+    }
+}
+
+@media (orientation: landscape) {
+    main {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        flex: 0 0 250px;
+        order: 0;
+    }
+}
