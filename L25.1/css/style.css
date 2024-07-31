@@ -1,0 +1,101 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.text-primary {
+  color: #3498db;
+}
+
+.bg-primary, .content .boxes .box.box-primary {
+  background-color: #3498db;
+}
+
+.text-success {
+  color: #2ecc71;
+}
+
+.bg-success, .content .boxes .box.box-success {
+  background-color: #2ecc71;
+}
+
+.text-danger {
+  color: #e74c3c;
+}
+
+.bg-danger, .content .boxes .box.box-danger {
+  background-color: #e74c3c;
+}
+
+.margin-small {
+  margin: 5px;
+}
+
+.margin-medium {
+  margin: 10px;
+}
+
+.margin-large {
+  margin: 15px;
+}
+
+.padding-small {
+  padding: 5px;
+}
+
+.padding-medium {
+  padding: 10px;
+}
+
+.padding-large {
+  padding: 15px;
+}
+
+.font-small {
+  font-size: 12px;
+}
+
+.font-medium {
+  font-size: 16px;
+}
+
+.font-large {
+  font-size: 20px;
+}
+
+.header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: spacing(padding, medium);
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: spacing(padding, medium);
+  text-align: center;
+}
+
+.content {
+  margin: spacing(margin, small);
+  padding: spacing(padding, medium);
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.content .boxes {
+  display: flex;
+  gap: spacing(margin, medium);
+}
+.content .boxes .box {
+  padding: spacing(padding, medium);
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
