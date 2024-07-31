@@ -2,6 +2,37 @@
 $primary-color: #3498db;
 $secondary-color: #2ecc71;
 $font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// Змінні для теми
+$theme: light;
+$light-background: #ffffff;
+$dark-background: #333333;
+$light-text: #000000;
+$dark-text: #ffffff;
+
+// Змінні для кольорів
+$colors: (
+  primary: #3498db,
+  success: #2ecc71,
+  danger: #e74c3c
+);
+
+// Змінні для відступів
+$spacings: 1 through 5;
+
+// Міксін для теми
+@mixin theme($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+  }
+  
+  // Міксін для відступів
+  @mixin spacing($property, $range) {
+    @for $i from $range {
+      .#{$property}-#{$i} {
+        #{$property}: #{$i * 10px};
+      }
+    }
+  }
 
 // Міксін для центрованого контейнера
 @mixin center-container {
@@ -10,46 +41,80 @@ $font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   align-items: center;
 }
 
-// Стилі для body
+
+// Тема для body
 body {
-  font-family: $font-stack;
+  @if $theme == light {
+    @include theme($light-background, $light-text);
+  } @else if $theme == dark {
+    @include theme($dark-background, $dark-text);
+  }
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
 }
 
-// Вкладеність стилів для header
-header {
-  background-color: $primary-color;
-  color: white;
-  padding: 1rem;
-
-  h1 {
-    margin: 0;
+// Генерація класів для кольорів
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+  .bg-#{$name} {
+    background-color: $color;
   }
 }
+
+// Генерація класів для відступів
+@include spacing(margin, $spacings);
+@include spacing(padding, $spacings);
+
+// Стилі для header
+.header {
+  @include theme(map-get($colors, primary), $light-text);
+  padding: 1rem;
+}
+
+// Стилі для footer
+.footer {
+  @include theme(map-get($colors, success), $light-text);
+  padding: 1rem;
+  text-align: center;
+}
+
+// Стилі для контенту
+.content {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .boxes {
+    display: flex;
+    gap: 1rem;
+
+    .box {
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+      flex: 1;
+
+      &.box-primary {
+        @extend .bg-primary;
+      }
+      &.box-success {
+        @extend .bg-success;
+      }
+      &.box-danger {
+        @extend .bg-danger;
+      }
+    }
+  }
+}
+
 
 // Вкладеність стилів для main
 main {
   @include center-container;
   height: 80vh;
-
-  .content {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-    p {
-      color: $secondary-color;
-    }
-  }
-}
-
-// Вкладеність стилів для footer
-footer {
-  background-color: $primary-color;
-  color: white;
-  text-align: center;
-  padding: 1rem;
 }
