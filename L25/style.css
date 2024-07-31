@@ -1,0 +1,40 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 1rem;
+}
+header h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+main .content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main .content p {
+  color: #2ecc71;
+}
+
+footer {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

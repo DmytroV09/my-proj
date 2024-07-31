@@ -1,0 +1,55 @@
+// Змінні
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Міксін для центрованого контейнера
+@mixin center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Стилі для body
+body {
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+// Вкладеність стилів для header
+header {
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+// Вкладеність стилів для main
+main {
+  @include center-container;
+  height: 80vh;
+
+  .content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    p {
+      color: $secondary-color;
+    }
+  }
+}
+
+// Вкладеність стилів для footer
+footer {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
