@@ -1,0 +1,18 @@
+/* Error: (small: 5px, medium: 10px, large: 15px) isn't a valid CSS value.
+ *    ,
+ * 91 |     padding: spacing(margin, $spacings);
+ *    |                              ^^^^^^^^^ value
+ *    |              ========================== unknown function treated as plain CSS
+ *    '
+ *   L25.1/style.scss 91:30  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: (small: 5px, medium: 10px, large: 15px) isn't a valid CSS value.\a    \2577 \a 91 \2502      padding: spacing(margin, $spacings);\a    \2502                               ^^^^^^^^^ value\a    \2502               \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  unknown function treated as plain CSS\a    \2575 \a   L25.1/style.scss 91:30  root stylesheet";
+}
