@@ -88,7 +88,7 @@ body {
   // Стилі для header
   .header {
     @include theme(light); // Застосовуємо світлу тему
-    padding: spacings(margin, $spacings);
+    padding: spacing(margin, $spacings);
     @include font-size(large);
   }
   
