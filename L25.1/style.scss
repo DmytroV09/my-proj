@@ -1,0 +1,131 @@
+// Змінні для теми
+$theme: light;
+$themes: (
+  light: (
+    background: #ffffff,
+    color: #000000
+  ),
+  dark: (
+    background: #333333,
+    color: #ffffff
+  )
+);
+
+// Змінні для кольорів
+$colors: (
+  primary: #3498db,
+  success: #2ecc71,
+  danger: #e74c3c
+);
+
+// Змінні для відступів
+$spacings: (
+  small: 5px,
+  medium: 10px,
+  large: 15px
+);
+
+// Змінні для розмірів шрифтів
+$font-sizes: (
+  small: 12px,
+  medium: 16px,
+  large: 20px
+);
+
+
+// Міксін для теми
+@mixin theme($theme-name) {
+    $theme-settings: map-get($themes, $theme-name);
+  
+    background-color: map-get($theme-settings, background);
+    color: map-get($theme-settings, color);
+  }
+  
+  // Міксін для відступів
+  @mixin spacing($property, $values) {
+    @each $key, $value in $values {
+      .#{$property}-#{$key} {
+        #{$property}: $value;
+      }
+    }
+  }
+  
+  // Міксін для шрифтів
+  @mixin font-size($size-name) {
+    font-size: map-get($font-sizes, $size-name);
+  }
+
+
+// Тема для body
+body {
+    @include theme($theme);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  // Генерація класів для кольорів
+  @each $name, $color in $colors {
+    .text-#{$name} {
+      color: $color;
+    }
+    .bg-#{$name} {
+      background-color: $color;
+    }
+  }
+  
+  // Генерація класів для відступів
+  @include spacing(margin, $spacings);
+  @include spacing(padding, $spacings);
+  
+  // Генерація класів для розмірів шрифтів
+  @each $name, $size in $font-sizes {
+    .font-#{$name} {
+      @include font-size($name);
+    }
+  }
+  
+  // Стилі для header
+  .header {
+    @include theme(light); // Застосовуємо світлу тему
+    padding: spacing(margin, $spacings);
+    @include font-size(large);
+  }
+  
+  // Стилі для footer
+  .footer {
+    @include theme(dark); // Застосовуємо темну тему
+    padding: spacing(padding, $spacings);
+    text-align: center;
+  }
+  
+  // Стилі для контенту
+  .content {
+    margin: spacing(margin, small);
+    padding: spacing(padding, medium);
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    .boxes {
+      display: flex;
+      gap: spacing(margin, medium);
+  
+      .box {
+        padding: spacing(padding, medium);
+        border-radius: 5px;
+        text-align: center;
+        flex: 1;
+  
+        &.box-primary {
+          @extend .bg-primary;
+        }
+        &.box-success {
+          @extend .bg-success;
+        }
+        &.box-danger {
+          @extend .bg-danger;
+        }
+      }
+    }
+  }
