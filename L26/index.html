@@ -3,102 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap and Tailwind CSS Example</title>
-  <!-- Bootstrap CSS -->
+  <title>Home Page</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Tailwind CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Brand</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-        Відкрити модальне вікно
-      </button>
-      
-      <!-- HTML-код модального вікна -->
-      <div class="modal" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <!-- Вміст модального вікна -->
-          </div>
-        </div>
-      </div>
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Brand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">Колонка 1</div>
-      <div class="col-md-4">Колонка 2</div>
-      <div class="col-md-4">Колонка 3</div>
+      <div class="col-md-12">
+        <h1 class="text-center">Welcome to Our Website</h1>
+        <p class="text-center">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <div class="text-center">
+          <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded">
+            Learn More
+          </button>
+        </div>
+      </div>
     </div>
   </div>
-
-<!-- HTML-код перехідних закладок -->
-<ul class="nav nav-tabs" id="myTabs">
-    <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#home">Головна</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#profile">Профіль</a>
-    </li>
-  </ul>
-  
-  <!-- HTML-код вмісту закладок -->
-  <div class="tab-content">
-    <div class="tab-pane active" id="home">
-      <p>Зміст головної закладки</p>
-    </div>
-    <div class="tab-pane" id="profile">
-      <p>Зміст закладки профілю</p>
-    </div>
-  </div>
-
-  <div class="alert alert-warning alert-dismissible fade show" role="alert">
-    Це попередження.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Закрити">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <!-- HTML-код попередження -->
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
-    Це попередження.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Закрити">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="bg-blue-500 text-black p-4">Привіт, світ!</div>
-  <div class="bg-blue-500 text-white font-bold py-2 px-4 rounded">
-    Це кнопка
-  </div>
-  
-  <input class="border border-gray-300 rounded px-4 py-2" type="text" placeholder="Введіть текст">
-  
-  <div class="flex justify-center items-center h-16 bg-yellow-200">
-    Це флекс-контейнер з вирівнюванням по центру
-  </div>
-  
-  <div class="container mx-auto">
-    Це блок з центруванням за допомогою Tailwind CSS-класу `container`
-  </div>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
