@@ -1,0 +1,42 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.bg-blue {
+    background-color: #3498db;
+}
+.text-white {
+    color: #fff;
+}
+.text-blue {
+    color: #3498db;
+}
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.mt-4 {
+    margin-top: 1rem;
+}
+.mb-4 {
+    margin-bottom: 1rem;
+}
+.list-none {
+    list-style: none;
+}
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-blue {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+}
+.btn-blue:hover {
+    background-color: #2980b9;
+}
