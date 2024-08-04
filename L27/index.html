@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Sass Project</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Atomic CSS Example</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Sass Project</h1>
+    <header class="bg-blue py-4">
+        <div class="container">
+            <h1 class="text-white">Welcome to Atomic CSS</h1>
+        </div>
     </header>
-    <main>
-        <div class="product-card AddToCartButton">
-            <img class="product-card__image" src="product.jpg" alt="Product Image">
-            <div class="product-card__info">
-              <h2 class="product-card__title">Назва продукту</h2>
-              <p class="product-card__description">Опис продукту</p>
-              <div class="product-card__price product-card__price--sale">Ціна: $20</div>
-              <button class="product-card__button product-card__button--primary">Додати в кошик</button>
-            </div>
-          </div>
-          <div class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">Елемент меню 1</li>
-              <li class="menu__item">Елемент меню 2</li>
-              <li class="menu__item menu__item--active">Елемент меню 3 (активний)</li>
+
+    <div class="container mt-4">
+        <section class="mb-4">
+            <h2 class="text-blue">What is Atomic CSS?</h2>
+            <p>Atomic CSS is a methodology of web development that emphasizes creating small, reusable classes for individual styles.</p>
+        </section>
+
+        <section class="mb-4">
+            <h2 class="text-blue">Benefits of Atomic CSS</h2>
+            <ul class="list-none">
+                <li>Fast development</li>
+                <li>Easy maintenance</li>
+                <li>Consistent styling</li>
             </ul>
-          </div>
-        
-    </main>
-    <footer>
-        <p>&copy; 2024 My Sass Project</p>
-    </footer>
+        </section>
+
+        <section>
+            <h2 class="text-blue">Example Button</h2>
+            <button class="btn btn-blue">Click me</button>
+        </section>
+    </div>
 </body>
 </html>
-
