@@ -1,53 +1,52 @@
-body {
-    font-family: Ubuntu, sans-serif;
-    margin: 0;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   
-  .box {
-    width: 400px;
-    height: 400px;
-    border-radius: 10px;
-    background-image: linear-gradient(to top right, #0b039c, #ff229d);
+  .bg-blue {
+    background-color: #3498db;
   }
   
-  .container {
-    height: 100vh;
-    box-sizing: border-box;
-    padding: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-image: linear-gradient(to bottom right, blue, red);
-    overflow-y: auto;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: filter 1s ease;
+  .text-white {
+    color: #fff;
   }
   
-  /* .high {
-    height: 200vh;
-  } */
-  
-  .box {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    background-image: linear-gradient(to top right, #0b039c, #ff228d);
+  .text-blue {
+    color: #3498db;
   }
   
-  .menu {
-    width: 200px;
-    height: 400px;
-    background-color: #333;
+  .py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   
-  .menu-item {
-    padding: 10px;
-    background-color: #999;
+  .mt-4 {
+    margin-top: 1rem;
   }
   
-  .menu__item--active {
-    background-color: #ff228d;
-    color: white;
-    font-weight: 800;
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .list-none {
+    list-style: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-blue {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-blue:hover {
+    background-color: #2980b9;
   }
