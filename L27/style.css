@@ -1,52 +1,87 @@
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .bg-blue {
-    background-color: #3498db;
-  }
-  
-  .text-white {
-    color: #fff;
-  }
-  
-  .text-blue {
-    color: #3498db;
-  }
-  
-  .py-4 {
+/* Atomic CSS классы */
+.bg-blue {
+    background-color: blue;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-  
-  .mt-4 {
+}
+
+.mt-4 {
     margin-top: 1rem;
-  }
-  
-  .mb-4 {
+}
+
+.mb-4 {
     margin-bottom: 1rem;
-  }
-  
-  .list-none {
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.list-none {
     list-style: none;
-  }
-  
-  .btn {
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
     display: inline-block;
     padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .btn-blue {
-    background-color: #3498db;
-    color: #fff;
     border: none;
-  }
-  
-  .btn-blue:hover {
-    background-color: #2980b9;
-  }
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: blue;
+    color: white;
+}
+
+/* БЕМ CSS классы */
+.header {
+    /* Стили для header */
+}
+
+.header__container {
+    /* Стили для контейнера в header */
+}
+
+.header__title {
+    /* Стили для заголовка в header */
+}
+
+.main {
+    /* Стили для main */
+}
+
+.main__section {
+    /* Стили для section в main */
+}
+
+.main__title {
+    /* Стили для заголовков в main */
+}
+
+.main__text {
+    /* Стили для текстов в main */
+}
+
+.main__list {
+    /* Стили для списка в main */
+}
+
+.main__list-item {
+    /* Стили для элементов списка в main */
+}
