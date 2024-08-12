@@ -50,38 +50,48 @@
 }
 
 /* БЕМ CSS классы */
-.header {
+.header { 
+    position: center;
     /* Стили для header */
 }
 
 .header__container {
+    position: center;
     /* Стили для контейнера в header */
 }
 
 .header__title {
+    position: center;
     /* Стили для заголовка в header */
 }
 
 .main {
+    position: center;
     /* Стили для main */
 }
 
 .main__section {
+    position: center;
     /* Стили для section в main */
 }
 
 .main__title {
-    /* Стили для заголовков в main */
+    position: center;
+    /* Стили для заг
+    оловков в main */
 }
 
 .main__text {
+    position: center;
     /* Стили для текстов в main */
 }
 
 .main__list {
+    position: center;
     /* Стили для списка в main */
 }
 
 .main__list-item {
+    position: center;
     /* Стили для элементов списка в main */
 }
