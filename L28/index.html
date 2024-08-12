@@ -21,6 +21,27 @@
       <svg width="200" height="200">
         <circle id="myCircle" cx="100" cy="100" r="50" fill="blue" />
       </svg>
+      <script>
+        // Отримання посилання на SVG елемент за його id
+        var circle = document.getElementById('myCircle');
       
+      
+        // Функція для зміни розміру та коліру кола
+        function animateCircle() {
+          // Генеруємо випадкові значення для нового радіусу та кольору
+          var newRadius = Math.random() * 50 + 25; // Радіус від 25 до 75
+          var newColor = '#' + Math.floor(Math.random()*16777215).toString(16); // Випадковий колір
+      
+      
+          // Змінюємо атрибути кола
+          circle.setAttribute('r', newRadius);
+          circle.setAttribute('fill', newColor);
+        }
+      
+      
+        // Викликаємо функцію animateCircle кожні 2 секунди
+        setInterval(animateCircle, 2000);
+      </script>
+
 </body>
 </html>
