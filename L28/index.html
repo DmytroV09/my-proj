@@ -3,43 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple SVG Graphics</title>
-    <style>
-        .heavy {
-            font: bold 14px sans-serif;
-        }
-    </style>
+    <title>Atomic CSS Example</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
-        <!-- Rectangle -->
-        <rect x="10" y="10" width="50" height="50" fill="#ff9933" stroke="#ff228d" stroke-width="2" />
+    <header class="header bg-blue py-4">
+        <div class="header__container container">
+            <h1 class="header__title text-white">Welcome to Atomic CSS</h1>
+        </div>
+    </header>
 
-        <!-- Circle -->
-        <circle cx="150" cy="50" r="40" fill="blue" />
-
-        <!-- Ellipse -->
-        <ellipse cx="250" cy="50" rx="30" ry="20" fill="green" />
-
-        <!-- Line -->
-        <line x1="10" y1="100" x2="290" y2="100" stroke="black" stroke-width="2" />
-
-        <!-- Polygon -->
-        <polygon points="50,150 90,120 130,150 90,180" fill="yellow" stroke="black" stroke-width="2" />
-
-        <!-- Polyline -->
-        <polyline points="200,150 220,130 240,150 260,130 280,150" fill="none" stroke="red" stroke-width="2" />
-
-        <!-- Path -->
-        <path d="M50,250 C70,230 110,270 130,250 S170,230 190,250" fill="none" stroke="purple" stroke-width="2" />
-
-        <!-- Text -->
-        <text x="50" y="280" class="heavy" fill="black">Hello SVG</text>
-
-        <!-- Circle with animation -->
-        <circle cx="250" cy="250" r="20" fill="none" stroke="#000" stroke-width="3">
-            <animate attributeName="r" values="10;40;20;10" dur="2s" repeatCount="indefinite"/>
-        </circle>
-    </svg>
+    <main class="main container mt-4">
+        <svg width="200" height="200" viewBox="0 0 300 300">
+            <path id="motionPath" d="M 10 80 Q 95 10 180 80 T 180 80 C 40 0 10 2 80 200" fill="none" stroke="black"/>
+            <circle cx="0" cy="0" r="10" fill="red">
+              </animateMotion>
+            </circle>
+          </svg>
+    </main>
 </body>
 </html>
