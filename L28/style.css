@@ -1,0 +1,76 @@
+#circles {
+    animation: none;
+    transform-origin: bottom left;
+    animation: spin 2s ease-in-out infinite 2s;
+  }
+  
+  #first {
+    animation: zoom 1s ease-in-out infinite;
+  }
+  
+  #second {
+    animation: zoom 2s ease-in-out infinite;
+  }
+  
+  #third {
+    animation: zoom 3s ease-in-out infinite;
+  }
+  
+  #circles #first, #circles #second, #circles #third {
+    transition: fill 1s ease-in-out, transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  #circles:hover {
+    animation: none;
+  
+    #first {
+      fill: #ff228d;
+      transform: translateX(-100px) translateY(-50px);
+    }
+  
+    #second {
+      fill: #ff228d;
+      transform: translateX(100px);
+    }
+  
+    #third {
+      fill: #ff228d;
+      transform: translateY(-100px);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      rotate: 0;
+    }
+  
+    100% {
+      rotate: 360deg;
+    }
+  }
+  
+  @keyframes zoom {
+    0% {
+      scale: 1.2;
+    }
+  
+    25% {
+      scale: 1.5;
+    }
+  
+    50% {
+      scale: 0.9;
+    }
+  
+    75% {
+      scale: 0.5;
+    }
+  
+    100% {
+      scale: 1;
+    }
+  
+    100% {
+      scale: 1.2;
+    }
+  }
