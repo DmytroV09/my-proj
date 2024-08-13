@@ -1,73 +1,121 @@
+/* Включаем 3D-графику с помощью CSS */
 body {
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
-  }
-  
-  .box {
-    width: 400px;
-    height: 400px;
-    border-radius: 10px;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+.container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    overflow: hidden;
-    background-position: center center;
-    text-align: center;
-  }
-  
-  .container {
+    justify-content: center;
     height: 100vh;
-    box-sizing: border-box;
+    background: linear-gradient(135deg, #2b2b2b, #1a1a1a);
+}
+
+.hero-section {
+    text-align: center;
     padding: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to bottom right, #f3ccf3, #86b6f6);
-    overflow-y: auto;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: filter 1s ease;
-  }
-  @media (min-width: 960px) {
-    .container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  img {
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    color: #ff5252;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff5252;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e03e3e;
+}
+
+.form-section {
+    background-color: #2e2e2e;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
     width: 100%;
-    height: auto;
-    filter: drop-shadow(2px 2px 20px black);
-  }
-  
-  .element {
-    width: 200px;
+    margin-top: 50px;
+}
+
+.form-section h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+.form-group textarea {
     height: 150px;
-    overflow: hidden;
-    background-image: url("https://raw.githubusercontent.com/iamAlinaaa/copeden-images/main/circles.png");
-    background-position: center center;
-    background-size: cover;
-    margin-right: 20px;
-  }
-  
-  .img {
+    resize: vertical;
+}
+
+.form-group input[type="submit"] {
+    background-color: #ff5252;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #e03e3e;
+}
+
+.background-3d {
     width: 100%;
-    height: auto;
-    max-width: 100%;
-  }
-  
-  .bg-image {
-    background-image: url("https://raw.githubusercontent.com/iamAlinaaa/copeden-images/main/circles.png");
-    background-image: image(
-      "https://raw.githubusercontent.com/iamAlinaaa/copeden-images/main/circles.png"
-    );
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('path/to/3d-background.jpg') no-repeat center center;
     background-size: cover;
-    background-position: center;
-  }
-  
-  @media (max-width: 768px) {
-    .bg-image {
-      background-image: url("https://raw.githubusercontent.com/iamAlinaaa/copeden-images/main/circles.png");
-    }
-  }
+    filter: blur(4px);
+    z-index: -1;
+}
