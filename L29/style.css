@@ -141,3 +141,25 @@ body {
     filter: blur(4px);
     z-index: -1;
 }
+/* Основні стилі для SVG */
+.icon-container svg {
+    width: 100px;
+    height: 100px;
+    fill: red; /* Змінюємо колір заповнення */
+    stroke: black; /* Змінюємо колір обводу */
+    transition: transform 0.3s ease;
+}
+
+/* Масштабування SVG при наведенні */
+.icon-container svg:hover {
+    transform: scale(1.2); /* Збільшуємо зображення на 20% при наведенні курсору */
+}
+.svg-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.svg-icon:hover {
+    transform: scale(1.2);
+}
