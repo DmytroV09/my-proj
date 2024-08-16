@@ -1,0 +1,47 @@
+/* Загальні стилі для сторінки */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Стилі для hero секції з фоновим зображенням */
+.hero {
+    height: 100vh; /* Висота секції - 100% від висоти вікна */
+    background-image: url('your-image-large.jpg'); /* Фонове зображення для великих екранів */
+    background-size: cover; /* Масштабування фонового зображення, щоб повністю заповнити секцію */
+    background-position: center center; /* Центрування фонового зображення */
+    background-repeat: no-repeat; /* Заборона повторення фонового зображення */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Контентна секція */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Медіа-запити для адаптивності фонових зображень */
+@media (max-width: 1200px) {
+    .hero {
+        background-image: url('your-image-medium.jpg'); /* Зображення середнього розміру для екранів до 1200px */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: url('your-image-small.jpg'); /* Зображення меншого розміру для екранів до 768px */
+        background-position: top center; /* Зміна положення фонового зображення для кращого відображення на менших екранах */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        background-size: contain; /* Зображення зберігає свої пропорції і вміщується в контейнер */
+    }
+}

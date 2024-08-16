@@ -30,3 +30,12 @@
 .image-scale:hover {
     transform: scale(1.1); /* Масштабування зображення при наведенні */
 }
+
+@media (max-width: 768px) {
+    .image-container {
+        max-width: 100%;
+    }
+    .image-crop {
+        height: 200px; /* Зменшена висота для мобільних пристроїв */
+    }
+}
