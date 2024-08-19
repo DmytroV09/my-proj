@@ -12,23 +12,43 @@ body {
     padding: 20px;
 }
 
+/* 3D та градієнтні ефекти */
 .hero {
-    background: url('hero-bg.jpg') center center/cover no-repeat;
-    padding: 60px 20px;
+    position: relative;
+    color: #fff;
     text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, rgba(29, 29, 29, 0.8), rgba(48, 48, 48, 0.8)), url('hero-default.jpg') center center/cover no-repeat;
+    perspective: 1000px;
 }
 
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    transform: rotateY(20deg) rotateX(10deg);
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: rotateY(20deg) rotateX(10deg) translateY(0); }
+    50% { transform: rotateY(15deg) rotateX(5deg) translateY(-20px); }
+    100% { transform: rotateY(20deg) rotateX(10deg) translateY(0); }
 }
 
 .btn-primary {
     padding: 10px 20px;
-    background-color: #e63946;
+    background: linear-gradient(45deg, #e63946, #f77f00);
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
 }
 
 .section {
@@ -39,10 +59,20 @@ h2 {
     font-size: 36px;
     margin-bottom: 20px;
     text-align: center;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .service-item, .gallery-item {
     margin-bottom: 20px;
+}
+
+.service-item h3, .gallery-item img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item h3:hover, .gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 footer {

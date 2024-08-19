@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Автоелектрика та Чіп-Тюнінг</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section -->
+    <!-- Hero Section with <picture> for adaptive image -->
     <header class="hero">
+        <picture>
+            <source srcset="hero-large.jpg" media="(min-width: 1200px)">
+            <source srcset="hero-medium.jpg" media="(min-width: 800px)">
+            <source srcset="hero-small.jpg" media="(max-width: 799px)">
+            <img src="hero-default.jpg" alt="Професійна автоелектрика та чіп-тюнінг">
+        </picture>
         <div class="container">
             <h1>Професійна автоелектрика та чіп-тюнінг</h1>
             <p>Оптимізація вашого авто під будь-які потреби</p>
