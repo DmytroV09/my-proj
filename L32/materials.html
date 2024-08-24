@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+  </div>
+
+ 
+<script>
+  const canvas = document.getElementById('myCanvas');
+  const context = canvas.getContext('2d');
+
+  // Малюємо прямокутник
+  context.fillStyle = 'blue'; // Колір заливки
+  context.fillRect(50, 50, 100, 50); // (x, y, ширина, висота)
+
+  // Малюємо лінію
+  context.strokeStyle = 'red'; // Колір лінії
+  context.lineWidth = 3; // Товщина лінії
+  context.beginPath();
+  context.moveTo(200, 50); // Початкова точка (x, y)
+  context.lineTo(300, 100); // Кінцева точка (x, y)
+  context.stroke(); // Відображення лінії
+
+  // Малюємо еліпс
+  context.beginPath();
+  context.ellipse(150, 150, 50, 30, 0, 0, 2 * Math.PI); // (x, y, радіусX, радіусY, rotation, startAngle, endAngle)
+  context.strokeStyle = 'green'; // Колір контуру
+  context.stroke(); // Відображення контуру
+
+  // Додаємо текст
+  context.fillStyle = 'black'; // Колір тексту
+  context.font = '20px Arial'; // Розмір та шрифт тексту
+  context.fillText('Hello, Canvas!', 50, 180); // (текст, x, y)
+
+  // Намалюємо червоний прямокутник
+  context.fillStyle = '#FF90BC';
+  context.fillRect(50, 50, 100, 100);
+
+  let x = 0;
+  function drawSquare() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.fillRect(x, 50, 50, 50);
+    x = x > canvas.width ? 0 : x += 1;
+    requestAnimationFrame(drawSquare);
+  }
+  drawSquare();
+</script>
+</body>
+</html>
