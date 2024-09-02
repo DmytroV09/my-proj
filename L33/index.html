@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оптимізована веб-сторінка з WebP зображеннями</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section with <picture> for adaptive image -->
+    <header class="hero">
+        <picture>
+            <source srcset="images/hero-large.webp" type="image/webp" media="(min-width: 1200px)">
+            <source srcset="images/hero-medium.webp" type="image/webp" media="(min-width: 800px)">
+            <source srcset="images/hero-small.webp" type="image/webp" media="(max-width: 799px)">
+            
+            <!-- Альтернативні зображення для браузерів, які не підтримують WebP -->
+            <source srcset="images/hero-large.jpg" media="(min-width: 1200px)">
+            <source srcset="images/hero-medium.jpg" media="(min-width: 800px)">
+            <source srcset="images/hero-small.jpg" media="(max-width: 799px)">
+            
+            <img src="images/hero-large.jpg" alt="Професійна автоелектрика та чіп-тюнінг">
+        </picture>
+        <div class="container">
+            <h1>Професійна автоелектрика та чіп-тюнінг</h1>
+            <p>Оптимізація вашого авто під будь-які потреби</p>
+            <a href="#services" class="btn-primary">Наші послуги</a>
+        </div>
+    </header>
+
+    <!-- Галерея робіт -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Наші роботи</h2>
+
+            <!-- Зображення 1 -->
+            <div class="gallery-item">
+                <picture>
+                    <source srcset="images/work1-large.webp" type="image/webp" media="(min-width: 1200px)">
+                    <source srcset="images/work1-medium.webp" type="image/webp" media="(min-width: 600px)">
+                    <source srcset="images/work1-small.webp" type="image/webp" media="(max-width: 599px)">
+
+                    <!-- Альтернативні зображення для браузерів, які не підтримують WebP -->
+                    <source srcset="images/work1-large.jpg" media="(min-width: 1200px)">
+                    <source srcset="images/work1-medium.jpg" media="(min-width: 600px)">
+                    <source srcset="images/work1-small.jpg" media="(max-width: 599px)">
+
+                    <img src="images/work1-large.jpg" alt="Проект 1">
+                </picture>
+            </div>
+
+            <!-- Зображення 2 -->
+            <div class="gallery-item">
+                <picture>
+                    <source srcset="images/work2-large.webp" type="image/webp" media="(min-width: 1200px)">
+                    <source srcset="images/work2-medium.webp" type="image/webp" media="(min-width: 600px)">
+                    <source srcset="images/work2-small.webp" type="image/webp" media="(max-width: 599px)">
+
+                    <source srcset="images/work2-large.jpg" media="(min-width: 1200px)">
+                    <source srcset="images/work2-medium.jpg" media="(min-width: 600px)">
+                    <source srcset="images/work2-small.jpg" media="(max-width: 599px)">
+
+                    <img src="images/work2-large.jpg" alt="Проект 2">
+                </picture>
+            </div>
+
+            <!-- Зображення 3 -->
+            <div class="gallery-item">
+                <picture>
+                    <source srcset="images/work3-large.webp" type="image/webp" media="(min-width: 1200px)">
+                    <source srcset="images/work3-medium.webp" type="image/webp" media="(min-width: 600px)">
+                    <source srcset="images/work3-small.webp" type="image/webp" media="(max-width: 599px)">
+
+                    <source srcset="images/work3-large.jpg" media="(min-width: 1200px)">
+                    <source srcset="images/work3-medium.jpg" media="(min-width: 600px)">
+                    <source srcset="images/work3-small.jpg" media="(max-width: 599px)">
+
+                    <img src="images/work3-large.jpg" alt="Проект 3">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
