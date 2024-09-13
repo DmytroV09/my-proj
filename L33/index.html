@@ -1,87 +1,44 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оптимізована веб-сторінка з WebP зображеннями</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Оптимизация изображений с WebP</title>
+    <link rel="stylesheet" href="style.css"> <!-- Подключение CSS -->
 </head>
 <body>
-
-    <!-- Hero Section with <picture> for adaptive image -->
-    <header class="hero">
+    <header>
+        <!-- Использование тега <picture> для изображения hero -->
         <picture>
-            <source srcset="images/hero-large.webp" type="image/webp" media="(min-width: 1200px)">
-            <source srcset="images/hero-medium.webp" type="image/webp" media="(min-width: 800px)">
-            <source srcset="images/hero-small.webp" type="image/webp" media="(max-width: 799px)">
-            
-            <!-- Альтернативні зображення для браузерів, які не підтримують WebP -->
-            <source srcset="images/hero-large.jpg" media="(min-width: 1200px)">
-            <source srcset="images/hero-medium.jpg" media="(min-width: 800px)">
-            <source srcset="images/hero-small.jpg" media="(max-width: 799px)">
-            
-            <img src="images/hero-large.jpg" alt="Професійна автоелектрика та чіп-тюнінг">
+            <!-- WebP версия изображения -->
+            <source srcset="hero-large.webp" type="image/webp">
+            <!-- Оригинальная версия изображения для браузеров, не поддерживающих WebP -->
+            <img src="hero-large.jpg" alt="Главное изображение сайта">
         </picture>
-        <div class="container">
-            <h1>Професійна автоелектрика та чіп-тюнінг</h1>
-            <p>Оптимізація вашого авто під будь-які потреби</p>
-            <a href="#services" class="btn-primary">Наші послуги</a>
-        </div>
     </header>
 
-    <!-- Галерея робіт -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <h2>Наші роботи</h2>
+    <section class="gallery">
+        <!-- Галерея изображений с оптимизацией WebP -->
+        <div class="gallery-item">
+            <picture>
+                <source srcset="work1-large.webp" type="image/webp">
+                <img src="work1-large.jpg" alt="Изображение работы 1">
+            </picture>
+        </div>
 
-            <!-- Зображення 1 -->
-            <div class="gallery-item">
-                <picture>
-                    <source srcset="images/work1-large.webp" type="image/webp" media="(min-width: 1200px)">
-                    <source srcset="images/work1-medium.webp" type="image/webp" media="(min-width: 600px)">
-                    <source srcset="images/work1-small.webp" type="image/webp" media="(max-width: 599px)">
+        <div class="gallery-item">
+            <picture>
+                <source srcset="work2-large.webp" type="image/webp">
+                <img src="work2-large.jpg" alt="Изображение работы 2">
+            </picture>
+        </div>
 
-                    <!-- Альтернативні зображення для браузерів, які не підтримують WebP -->
-                    <source srcset="images/work1-large.jpg" media="(min-width: 1200px)">
-                    <source srcset="images/work1-medium.jpg" media="(min-width: 600px)">
-                    <source srcset="images/work1-small.jpg" media="(max-width: 599px)">
-
-                    <img src="images/work1-large.jpg" alt="Проект 1">
-                </picture>
-            </div>
-
-            <!-- Зображення 2 -->
-            <div class="gallery-item">
-                <picture>
-                    <source srcset="images/work2-large.webp" type="image/webp" media="(min-width: 1200px)">
-                    <source srcset="images/work2-medium.webp" type="image/webp" media="(min-width: 600px)">
-                    <source srcset="images/work2-small.webp" type="image/webp" media="(max-width: 599px)">
-
-                    <source srcset="images/work2-large.jpg" media="(min-width: 1200px)">
-                    <source srcset="images/work2-medium.jpg" media="(min-width: 600px)">
-                    <source srcset="images/work2-small.jpg" media="(max-width: 599px)">
-
-                    <img src="images/work2-large.jpg" alt="Проект 2">
-                </picture>
-            </div>
-
-            <!-- Зображення 3 -->
-            <div class="gallery-item">
-                <picture>
-                    <source srcset="images/work3-large.webp" type="image/webp" media="(min-width: 1200px)">
-                    <source srcset="images/work3-medium.webp" type="image/webp" media="(min-width: 600px)">
-                    <source srcset="images/work3-small.webp" type="image/webp" media="(max-width: 599px)">
-
-                    <source srcset="images/work3-large.jpg" media="(min-width: 1200px)">
-                    <source srcset="images/work3-medium.jpg" media="(min-width: 600px)">
-                    <source srcset="images/work3-small.jpg" media="(max-width: 599px)">
-
-                    <img src="images/work3-large.jpg" alt="Проект 3">
-                </picture>
-            </div>
+        <div class="gallery-item">
+            <picture>
+                <source srcset="work3-large.webp" type="image/webp">
+                <img src="work3-large.jpg" alt="Изображение работы 3">
+            </picture>
         </div>
     </section>
-
-    <script src="script.js"></script>
 </body>
 </html>

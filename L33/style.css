@@ -1,0 +1,45 @@
+/* Базовые стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для хедера */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Стили для изображения в хедере */
+header picture, header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Стили для галереи */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Стили для каждого элемента галереи */
+.gallery-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.gallery-item picture, .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
