@@ -1,0 +1,15 @@
+/* Стилі для прямокутника */
+.rectangle {
+    width: 300px; /* Ширина прямокутника */
+    height: 150px; /* Висота прямокутника */
+    background-color: #3498db; /* Колір фону */
+    border: 2px solid #2c3e50; /* Рамка */
+    color: #fff; /* Колір тексту */
+    font-size: 18px; /* Розмір шрифту */
+    display: flex; /* Для центрування тексту */
+    justify-content: center; /* Горизонтальне центрування тексту */
+    align-items: center; /* Вертикальне центрування тексту */
+    text-align: center; /* Вирівнювання тексту */
+    margin: 20px auto; /* Відступи та центрування на сторінці */
+    border-radius: 8px; /* Закруглені кути */
+}
