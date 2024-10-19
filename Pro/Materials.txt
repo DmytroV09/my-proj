@@ -4,6 +4,9 @@
 
 //**Пример**:
 //```javascript
+
+console.log()
+
 let name = "Тоні Старк"; // String
 let age = 40; // Number
 let isHero = true; // Boolean
@@ -156,6 +159,11 @@ try {
 
 //**Пример**:
 //```javascript
+
+console.log(
+
+)
+
 let arr = [1, 2, 3];
 let [a, b] = arr;
 console.log(a, b); // 1 2
