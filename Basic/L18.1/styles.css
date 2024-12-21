@@ -32,7 +32,8 @@ body {
 }
 
 .first-block:hover {
-    filter: blur(0px) opacity(1) grayscale(0%);
+    filter: blur(2px) opacity(1) grayscale(0%);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .second-block {
@@ -44,9 +45,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 200px;
+    background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(1px) opacity(.8) grayscale(50%);
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
 }
 
 .third-block img, .third-block p {
+    width: 50%;
+}
+
+.backdrop-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
 }
